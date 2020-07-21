@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <title>Pemantauan Virus Corona</title>
+    <style>
+        @media (max-width: 768px) {
+            .card {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -32,12 +39,12 @@
             <div class="col-md-4">
                 <div class="card bg-danger text-white py-3 px-4">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-7">
                             <h5>Positif</h5>
                             <h2 id="datakasus"></h2>
                             <h5>Orang</h5>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <img src="img/sad.svg" style="width: 100px">
                         </div>
                     </div>
@@ -86,7 +93,30 @@
                 </div>
             </div>
         </div>
+        <!-- akhir row -->
+        <div class="card text-white bg-secondary mt-5">
+            <div class="card-body">
+                <h3 class="text-center">Data Kasus Virus Corona Di Indonesia berdasarkan Provinsi</h3>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover mt-3">
+                <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Nama Provinsi</th>
+                        <th scope="col">Positif</th>
+                        <th scope="col">Sembuh</th>
+                        <th scope="col">Meninggal</th>
+                    </tr>
+                </thead>
+                <tbody id="table-data">
+
+                </tbody>
+            </table>
+        </div>
     </div>
+    <!-- akhir container -->
 
     <footer class="bg-primary mt-3 text-white text-center pt-2 pb-2">
         &copy; Copyright Created By: Hafizh Maulana Y.

@@ -3,10 +3,12 @@ $(document).ready(function () {
     // panggil functions
     semuaData();
     dataNegara();
+    dataProvinsi();
 
     setInterval(() => {
         semuaData();
         dataNegara();
+        dataProvinsi();
     }, 1000);
 
     function semuaData() {
@@ -14,14 +16,15 @@ $(document).ready(function () {
             url: 'https://coronavirus-19-api.herokuapp.com/all',
             success: function (data) {
                 try {
+                    var formatter = new Intl.NumberFormat('en');
                     var json = data;
                     var kasus = data.cases;
                     var meninggal = data.deaths;
                     var sembuh = data.recovered;
 
-                    $('#datakasus').html(kasus);
-                    $('#datamati').html(meninggal);
-                    $('#datasembuh').html(sembuh);
+                    $('#datakasus').html(formatter.format(kasus));
+                    $('#datamati').html(formatter.format(meninggal));
+                    $('#datasembuh').html(formatter.format(sembuh));
 
 
                 } catch {
@@ -36,6 +39,7 @@ $(document).ready(function () {
             url: 'https://coronavirus-19-api.herokuapp.com/countries',
             success: function (data) {
                 try {
+                    var formatter = new Intl.NumberFormat('en');
                     var json = data;
                     var html = [];
 
@@ -50,12 +54,28 @@ $(document).ready(function () {
                                 var sembuh = datanegara.recovered;
 
                                 $('#dataid').html(
-                                    'Positif : ' + kasus + ' orang <br> Meninggal : ' + mati + ' orang <br> Sembuh : ' + sembuh + ' orang ')
+                                    'Positif : ' + formatter.format(kasus) + ' orang <br> Meninggal : ' + formatter.format(mati) + ' orang <br> Sembuh : ' + formatter.format(sembuh) + ' orang ')
                             }
 
                         }
                     }
 
+
+
+                } catch {
+                    alert('error');
+                }
+            }
+        });
+    }
+
+    function dataProvinsi() {
+        $.ajax({
+            url: 'curl.php',
+            type: 'GET',
+            success: function (data) {
+                try {
+                    $('#table-data').html(data);
 
 
                 } catch {
