@@ -72,6 +72,7 @@ $(document).ready(function () {
     function dataProvinsi() {
         $.ajax({
             url: 'curl.php',
+            type: 'GET',
             success: function (data) {
                 try {
                     $('#table-data').html(data);
