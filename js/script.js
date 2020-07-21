@@ -4,11 +4,13 @@ $(document).ready(function () {
     semuaData();
     dataNegara();
     dataProvinsi();
+    tanggalSekarang();
 
     setInterval(() => {
         semuaData();
         dataNegara();
         dataProvinsi();
+        tanggalSekarang();
     }, 1000);
 
     function semuaData() {
@@ -84,4 +86,5 @@ $(document).ready(function () {
             }
         });
     }
+
 });

@@ -1,3 +1,6 @@
+<?php
+require 'tanggal.php';
+?>
 <!doctype html>
 <html lang="en">
 
@@ -35,6 +38,11 @@
     </div>
 
     <div class="container">
+        <div class="row mb-3">
+            <div class="col-12">
+                <h5 class="text-center">Update Terakhir : <?= tanggal(); ?> WIB</h5>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-4">
                 <div class="card bg-danger text-white py-3 px-4">
