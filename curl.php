@@ -13,6 +13,8 @@ function http_request($url)
     // aktifkan fungsi  transfer nilai yg berupa string
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 1);
 
     $output = curl_exec($ch);
 

@@ -67,12 +67,12 @@
             <div class="col-md-4">
                 <div class="card bg-success text-white py-3 px-4">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-7">
                             <h5>Sembuh</h5>
                             <h2 id="datasembuh"></h2>
                             <h5>Orang</h5>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <img src="img/happy.svg" style="width: 100px">
                         </div>
                     </div>
