@@ -47,7 +47,7 @@ require 'tanggal.php';
             <div class="col-md-4">
                 <div class="card bg-danger text-white py-3 px-4">
                     <div class="row">
-                        <div class="col-md-7">
+                        <div class="col-md-8">
                             <h5>Positif</h5>
                             <h2 id="datakasus"></h2>
                             <h5>Orang</h5>
@@ -61,7 +61,7 @@ require 'tanggal.php';
             <div class="col-md-4">
                 <div class="card bg-info text-white py-3 px-4">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-8">
                             <h5>Meninggal</h5>
                             <h2 id="datamati"></h2>
                             <h5>Orang</h5>
@@ -75,7 +75,7 @@ require 'tanggal.php';
             <div class="col-md-4">
                 <div class="card bg-success text-white py-3 px-4">
                     <div class="row">
-                        <div class="col-md-7">
+                        <div class="col-md-8">
                             <h5>Sembuh</h5>
                             <h2 id="datasembuh"></h2>
                             <h5>Orang</h5>
