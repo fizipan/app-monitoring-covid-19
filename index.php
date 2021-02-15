@@ -52,7 +52,7 @@ require 'tanggal.php';
                             <h2 id="datakasus"></h2>
                             <h5>Orang</h5>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <img src="img/sad.svg" style="width: 100px">
                         </div>
                     </div>
@@ -66,7 +66,7 @@ require 'tanggal.php';
                             <h2 id="datamati"></h2>
                             <h5>Orang</h5>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <img src="img/cry.svg" style="width: 100px">
                         </div>
                     </div>
@@ -80,7 +80,7 @@ require 'tanggal.php';
                             <h2 id="datasembuh"></h2>
                             <h5>Orang</h5>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <img src="img/happy.svg" style="width: 100px">
                         </div>
                     </div>
